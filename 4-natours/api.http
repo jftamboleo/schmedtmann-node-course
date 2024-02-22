@@ -1,0 +1,15 @@
+### GET TOURS
+GET http://localhost:8001/api/v1/tours
+
+### GET TOUR BY ID
+GET http://localhost:8001/api/v1/tours/5
+
+### CREATE NEW TOUR
+POST http://localhost:8001/api/v1/tours
+Content-type: application/json
+
+{
+  "name": "Test Tour",
+  "duration": "10",
+  "difficulty": "easy"
+}
