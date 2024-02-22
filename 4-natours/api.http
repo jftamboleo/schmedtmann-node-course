@@ -13,3 +13,17 @@ Content-type: application/json
   "duration": "10",
   "difficulty": "easy"
 }
+
+### UPDATE TOUR BY ID
+PATCH http://localhost:8001/api/v1/tours/13
+Content-type: application/json
+
+{
+  "name": "Updated Tour",
+  "duration": "10",
+  "difficulty": "hard",
+  "test": "test"
+}
+
+### DELETE TOUR BY ID
+DELETE http://localhost:8001/api/v1/tours/14
