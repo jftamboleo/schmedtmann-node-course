@@ -87,10 +87,22 @@ const deleteTour = (req, res) => {
   })
 }
 
+const checkBody = (req, res, next) => {
+  const { name, price } = req.body
+  if (!name || !price) {
+    return res.status(400).json({
+      status: 'error',
+      message: 'missing name or price'
+    })
+  }
+  next()
+}
+
 module.exports = {
   getAllTours,
   getTour,
   createTour,
   updateTour,
-  deleteTour
+  deleteTour,
+  checkBody
 }
