@@ -15,7 +15,7 @@ Content-type: application/json
 }
 
 ### UPDATE TOUR BY ID
-PATCH http://localhost:8001/api/v1/tours/13
+PATCH http://localhost:8001/api/v1/tours/17
 Content-type: application/json
 
 {
@@ -26,4 +26,4 @@ Content-type: application/json
 }
 
 ### DELETE TOUR BY ID
-DELETE http://localhost:8001/api/v1/tours/14
+DELETE http://localhost:8001/api/v1/tours/17
